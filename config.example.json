@@ -1,0 +1,8 @@
+{
+  "broker": "localhost:8080",
+  "admin_user": "admin",
+  "admin_pass": "admin",
+  "vpn": "my-vpn",
+  "queues": "queue1,queue2,queue3",
+  "username": "client1"
+}
