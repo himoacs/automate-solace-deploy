@@ -87,6 +87,7 @@ def deploy_solace_broker() -> bool:
                 "docker", "run", "-d",
                 "-p", f"{SEMP_PORT}:{SEMP_PORT}",
                 "-p", f"{MESSAGING_PORT}:{MESSAGING_PORT}",
+                "--cpus", "2.0",
                 "--ulimit", "core=-1",
                 "--ulimit", "nofile=2448:1048576",
                 "--shm-size=1g",
